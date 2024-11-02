@@ -1,0 +1,15 @@
+D:\Universidad\8vo Ciclo\Aplicaciones Web\TF\Repositorios\Backend\Domain\bin\Debug\net8.0\Domain.deps.json
+D:\Universidad\8vo Ciclo\Aplicaciones Web\TF\Repositorios\Backend\Domain\bin\Debug\net8.0\Domain.dll
+D:\Universidad\8vo Ciclo\Aplicaciones Web\TF\Repositorios\Backend\Domain\bin\Debug\net8.0\Domain.pdb
+D:\Universidad\8vo Ciclo\Aplicaciones Web\TF\Repositorios\Backend\Domain\bin\Debug\net8.0\Infrastructure.dll
+D:\Universidad\8vo Ciclo\Aplicaciones Web\TF\Repositorios\Backend\Domain\bin\Debug\net8.0\Infrastructure.pdb
+D:\Universidad\8vo Ciclo\Aplicaciones Web\TF\Repositorios\Backend\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
+D:\Universidad\8vo Ciclo\Aplicaciones Web\TF\Repositorios\Backend\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Universidad\8vo Ciclo\Aplicaciones Web\TF\Repositorios\Backend\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+D:\Universidad\8vo Ciclo\Aplicaciones Web\TF\Repositorios\Backend\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+D:\Universidad\8vo Ciclo\Aplicaciones Web\TF\Repositorios\Backend\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+D:\Universidad\8vo Ciclo\Aplicaciones Web\TF\Repositorios\Backend\Domain\obj\Debug\net8.0\Domain.csproj.Up2Date
+D:\Universidad\8vo Ciclo\Aplicaciones Web\TF\Repositorios\Backend\Domain\obj\Debug\net8.0\Domain.dll
+D:\Universidad\8vo Ciclo\Aplicaciones Web\TF\Repositorios\Backend\Domain\obj\Debug\net8.0\refint\Domain.dll
+D:\Universidad\8vo Ciclo\Aplicaciones Web\TF\Repositorios\Backend\Domain\obj\Debug\net8.0\Domain.pdb
+D:\Universidad\8vo Ciclo\Aplicaciones Web\TF\Repositorios\Backend\Domain\obj\Debug\net8.0\ref\Domain.dll
