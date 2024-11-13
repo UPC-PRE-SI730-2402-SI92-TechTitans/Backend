@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Project.Domain.Groups.Model.Entities;
-using Project.Domain.Groups.Repositories;
+using Domain.Groups.Model.Entities;
+using Domain.Groups.Repositories;
 
-namespace Project.Application.Groups.CommandServices
+namespace Application.Groups.CommandServices
 {
     public class GroupCommandService
     {

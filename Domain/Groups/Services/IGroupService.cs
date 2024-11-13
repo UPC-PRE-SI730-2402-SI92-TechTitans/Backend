@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Project.Domain.Groups.Model.Entities;
+using Domain.Groups.Model.Entities;
 
-namespace Project.Domain.Groups.Services
+namespace Domain.Groups.Services
 {
     public interface IGroupService
     {
