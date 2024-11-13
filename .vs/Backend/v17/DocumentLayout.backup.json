@@ -1,0 +1,262 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3D255F58-5360-4AA2-BFD2-B840A74A2ACD}|Presentation\\Presentation.csproj|d:\\universidad\\8vo ciclo\\aplicaciones web\\tf\\repositorios\\backend\\presentation\\groups\\controllers\\groupscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D255F58-5360-4AA2-BFD2-B840A74A2ACD}|Presentation\\Presentation.csproj|solutionrelative:presentation\\groups\\controllers\\groupscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D255F58-5360-4AA2-BFD2-B840A74A2ACD}|Presentation\\Presentation.csproj|d:\\universidad\\8vo ciclo\\aplicaciones web\\tf\\repositorios\\backend\\presentation\\groups\\transform\\groupmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D255F58-5360-4AA2-BFD2-B840A74A2ACD}|Presentation\\Presentation.csproj|solutionrelative:presentation\\groups\\transform\\groupmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{907F0414-D2C2-4237-B1ED-86654FFEC416}|Domain\\Domain.csproj|d:\\universidad\\8vo ciclo\\aplicaciones web\\tf\\repositorios\\backend\\domain\\groups\\model\\entities\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{907F0414-D2C2-4237-B1ED-86654FFEC416}|Domain\\Domain.csproj|solutionrelative:domain\\groups\\model\\entities\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D255F58-5360-4AA2-BFD2-B840A74A2ACD}|Presentation\\Presentation.csproj|d:\\universidad\\8vo ciclo\\aplicaciones web\\tf\\repositorios\\backend\\presentation\\groups\\resources\\groupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D255F58-5360-4AA2-BFD2-B840A74A2ACD}|Presentation\\Presentation.csproj|solutionrelative:presentation\\groups\\resources\\groupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D255F58-5360-4AA2-BFD2-B840A74A2ACD}|Presentation\\Presentation.csproj|d:\\universidad\\8vo ciclo\\aplicaciones web\\tf\\repositorios\\backend\\presentation\\groups\\resources\\participantdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D255F58-5360-4AA2-BFD2-B840A74A2ACD}|Presentation\\Presentation.csproj|solutionrelative:presentation\\groups\\resources\\participantdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D255F58-5360-4AA2-BFD2-B840A74A2ACD}|Presentation\\Presentation.csproj|d:\\universidad\\8vo ciclo\\aplicaciones web\\tf\\repositorios\\backend\\presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3D255F58-5360-4AA2-BFD2-B840A74A2ACD}|Presentation\\Presentation.csproj|solutionrelative:presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D255F58-5360-4AA2-BFD2-B840A74A2ACD}|Presentation\\Presentation.csproj|d:\\universidad\\8vo ciclo\\aplicaciones web\\tf\\repositorios\\backend\\presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D255F58-5360-4AA2-BFD2-B840A74A2ACD}|Presentation\\Presentation.csproj|solutionrelative:presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{907F0414-D2C2-4237-B1ED-86654FFEC416}|Domain\\Domain.csproj|d:\\universidad\\8vo ciclo\\aplicaciones web\\tf\\repositorios\\backend\\domain\\groups\\repositories\\igrouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{907F0414-D2C2-4237-B1ED-86654FFEC416}|Domain\\Domain.csproj|solutionrelative:domain\\groups\\repositories\\igrouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{481A4AFC-0688-40E5-84DD-8CEEF9CA4220}|Application\\Application.csproj|d:\\universidad\\8vo ciclo\\aplicaciones web\\tf\\repositorios\\backend\\application\\groups\\queryservices\\groupqueryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{481A4AFC-0688-40E5-84DD-8CEEF9CA4220}|Application\\Application.csproj|solutionrelative:application\\groups\\queryservices\\groupqueryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{481A4AFC-0688-40E5-84DD-8CEEF9CA4220}|Application\\Application.csproj|d:\\universidad\\8vo ciclo\\aplicaciones web\\tf\\repositorios\\backend\\application\\groups\\commandservices\\groupcommandservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{481A4AFC-0688-40E5-84DD-8CEEF9CA4220}|Application\\Application.csproj|solutionrelative:application\\groups\\commandservices\\groupcommandservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE73C23-1C70-4E11-B885-E303FA1AC173}|Infrastructure\\Infrastructure.csproj|d:\\universidad\\8vo ciclo\\aplicaciones web\\tf\\repositorios\\backend\\infrastructure\\groups\\repositories\\grouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABE73C23-1C70-4E11-B885-E303FA1AC173}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\groups\\repositories\\grouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE73C23-1C70-4E11-B885-E303FA1AC173}|Infrastructure\\Infrastructure.csproj|d:\\universidad\\8vo ciclo\\aplicaciones web\\tf\\repositorios\\backend\\infrastructure\\groups\\persistence\\groupdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABE73C23-1C70-4E11-B885-E303FA1AC173}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\groups\\persistence\\groupdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{907F0414-D2C2-4237-B1ED-86654FFEC416}|Domain\\Domain.csproj|d:\\universidad\\8vo ciclo\\aplicaciones web\\tf\\repositorios\\backend\\domain\\groups\\services\\igroupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{907F0414-D2C2-4237-B1ED-86654FFEC416}|Domain\\Domain.csproj|solutionrelative:domain\\groups\\services\\igroupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE73C23-1C70-4E11-B885-E303FA1AC173}|Infrastructure\\Infrastructure.csproj|d:\\universidad\\8vo ciclo\\aplicaciones web\\tf\\repositorios\\backend\\infrastructure\\groups\\persistence\\groupdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABE73C23-1C70-4E11-B885-E303FA1AC173}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\groups\\persistence\\groupdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 14,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GroupMapper.cs",
+              "DocumentMoniker": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Presentation\\Groups\\Transform\\GroupMapper.cs",
+              "RelativeDocumentMoniker": "Presentation\\Groups\\Transform\\GroupMapper.cs",
+              "ToolTip": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Presentation\\Groups\\Transform\\GroupMapper.cs",
+              "RelativeToolTip": "Presentation\\Groups\\Transform\\GroupMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T00:31:32.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ParticipantDto.cs",
+              "DocumentMoniker": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Presentation\\Groups\\Resources\\ParticipantDto.cs",
+              "RelativeDocumentMoniker": "Presentation\\Groups\\Resources\\ParticipantDto.cs",
+              "ToolTip": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Presentation\\Groups\\Resources\\ParticipantDto.cs",
+              "RelativeToolTip": "Presentation\\Groups\\Resources\\ParticipantDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T00:30:38.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GroupDto.cs",
+              "DocumentMoniker": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Presentation\\Groups\\Resources\\GroupDto.cs",
+              "RelativeDocumentMoniker": "Presentation\\Groups\\Resources\\GroupDto.cs",
+              "ToolTip": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Presentation\\Groups\\Resources\\GroupDto.cs",
+              "RelativeToolTip": "Presentation\\Groups\\Resources\\GroupDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T00:30:09.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GroupCommandService.cs",
+              "DocumentMoniker": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Application\\Groups\\CommandServices\\GroupCommandService.cs",
+              "RelativeDocumentMoniker": "Application\\Groups\\CommandServices\\GroupCommandService.cs",
+              "ToolTip": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Application\\Groups\\CommandServices\\GroupCommandService.cs",
+              "RelativeToolTip": "Application\\Groups\\CommandServices\\GroupCommandService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T23:17:45.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GroupQueryService.cs",
+              "DocumentMoniker": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Application\\Groups\\QueryServices\\GroupQueryService.cs",
+              "RelativeDocumentMoniker": "Application\\Groups\\QueryServices\\GroupQueryService.cs",
+              "ToolTip": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Application\\Groups\\QueryServices\\GroupQueryService.cs",
+              "RelativeToolTip": "Application\\Groups\\QueryServices\\GroupQueryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T23:17:25.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GroupDbContextFactory.cs",
+              "DocumentMoniker": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Infrastructure\\Groups\\Persistence\\GroupDbContextFactory.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Groups\\Persistence\\GroupDbContextFactory.cs",
+              "ToolTip": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Infrastructure\\Groups\\Persistence\\GroupDbContextFactory.cs",
+              "RelativeToolTip": "Infrastructure\\Groups\\Persistence\\GroupDbContextFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T22:22:36.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GroupRepository.cs",
+              "DocumentMoniker": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Infrastructure\\Groups\\Repositories\\GroupRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Groups\\Repositories\\GroupRepository.cs",
+              "ToolTip": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Infrastructure\\Groups\\Repositories\\GroupRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Groups\\Repositories\\GroupRepository.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAIwDMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T20:26:07.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Presentation\\appsettings.json",
+              "RelativeDocumentMoniker": "Presentation\\appsettings.json",
+              "ToolTip": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Presentation\\appsettings.json",
+              "RelativeToolTip": "Presentation\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-12T20:06:36.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Presentation\\Program.cs",
+              "RelativeDocumentMoniker": "Presentation\\Program.cs",
+              "ToolTip": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Presentation\\Program.cs",
+              "RelativeToolTip": "Presentation\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T19:46:23.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Group.cs",
+              "DocumentMoniker": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Domain\\Groups\\Model\\Entities\\Group.cs",
+              "RelativeDocumentMoniker": "Domain\\Groups\\Model\\Entities\\Group.cs",
+              "ToolTip": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Domain\\Groups\\Model\\Entities\\Group.cs",
+              "RelativeToolTip": "Domain\\Groups\\Model\\Entities\\Group.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBYAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T19:45:11.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IGroupRepository.cs",
+              "DocumentMoniker": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Domain\\Groups\\Repositories\\IGroupRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Groups\\Repositories\\IGroupRepository.cs",
+              "ToolTip": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Domain\\Groups\\Repositories\\IGroupRepository.cs",
+              "RelativeToolTip": "Domain\\Groups\\Repositories\\IGroupRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T19:45:05.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IGroupService.cs",
+              "DocumentMoniker": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Domain\\Groups\\Services\\IGroupService.cs",
+              "RelativeDocumentMoniker": "Domain\\Groups\\Services\\IGroupService.cs",
+              "ToolTip": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Domain\\Groups\\Services\\IGroupService.cs",
+              "RelativeToolTip": "Domain\\Groups\\Services\\IGroupService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T19:44:56.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GroupDbContext.cs",
+              "DocumentMoniker": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Infrastructure\\Groups\\Persistence\\GroupDbContext.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Groups\\Persistence\\GroupDbContext.cs",
+              "ToolTip": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Infrastructure\\Groups\\Persistence\\GroupDbContext.cs",
+              "RelativeToolTip": "Infrastructure\\Groups\\Persistence\\GroupDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T19:44:11.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GroupsController.cs",
+              "DocumentMoniker": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Presentation\\Groups\\Controllers\\GroupsController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Groups\\Controllers\\GroupsController.cs",
+              "ToolTip": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Presentation\\Groups\\Controllers\\GroupsController.cs",
+              "RelativeToolTip": "Presentation\\Groups\\Controllers\\GroupsController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAYwDIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T19:41:49.122Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

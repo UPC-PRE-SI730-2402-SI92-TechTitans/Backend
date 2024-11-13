@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Project.Application.Groups.CommandServices;
-using Project.Application.Groups.QueryServices;
-using Project.Domain.Groups.Model.Entities;
+﻿using Microsoft.AspNetCore.Mvc;
+using Application.Groups.CommandServices;
+using Application.Groups.QueryServices;
+using Presentation.Groups.Resources;
+using Presentation.Groups.Transform;
+using Domain.Groups.Model.Entities;
 
-namespace Project.Presentation.Groups.Controllers
+namespace Presentation.Groups.Controllers
 {
     [ApiController]
     [Route("api/groups")]
@@ -22,30 +21,60 @@ namespace Project.Presentation.Groups.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Group>>> GetGroups()
+        public async Task<IActionResult> GetAllGroups()
         {
             var groups = await _queryService.GetAllGroupsAsync();
-            return Ok(groups);
+            var result = groups.Select(g => g.ToResource()).ToList();
+            return Ok(result);
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Group>> GetGroup(Guid id)
+        public async Task<IActionResult> GetGroupById(Guid id)
         {
             var group = await _queryService.GetGroupByIdAsync(id);
-            return group == null ? NotFound() : Ok(group);
+            if (group == null)
+            {
+                return NotFound();
+            }
+
+            var result = group.ToResource();
+            return Ok(result);
         }
 
         [HttpPost]
-        public async Task<ActionResult<Group>> CreateGroup(Group group)
+        public async Task<IActionResult> CreateGroup([FromBody] GroupDto groupDto)
         {
-            var createdGroup = await _commandService.CreateGroupAsync(group);
-            return CreatedAtAction(nameof(GetGroup), new { id = createdGroup.Id }, createdGroup);
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            groupDto.Id = null;
+            foreach (var participant in groupDto.Participants ?? new List<ParticipantDto>())
+            {
+                participant.Id = null;
+            }
+
+            var group = groupDto.ToDomainModel();
+            await _commandService.CreateGroupAsync(group);
+            var result = group.ToResource();
+            return CreatedAtAction(nameof(GetGroupById), new { id = result.Id }, result);
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateGroup(Guid id, Group group)
+        public async Task<IActionResult> UpdateGroup(Guid id, [FromBody] GroupDto groupDto)
         {
-            if (id != group.Id) return BadRequest();
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            if (id != groupDto.Id)
+            {
+                return BadRequest("The group ID doesn't match.");
+            }
+
+            var group = groupDto.ToDomainModel();
             await _commandService.UpdateGroupAsync(group);
             return NoContent();
         }

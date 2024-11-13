@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using Project.Domain.Groups.Model.Entities;
-using Project.Domain.Groups.Repositories;
-using Project.Infrastructure.Groups.Persistence;
+using Domain.Groups.Model.Entities;
+using Domain.Groups.Repositories;
+using Infrastructure.Groups.Persistence;
 
-namespace Project.Infrastructure.Groups.Repositories
+namespace Infrastructure.Groups.Repositories
 {
     public class GroupRepository : IGroupRepository
     {
@@ -17,9 +17,15 @@ namespace Project.Infrastructure.Groups.Repositories
             _context = context;
         }
 
-        public async Task<Group> GetByIdAsync(Guid id) => await _context.Groups.FindAsync(id);
+        public async Task<Group?> GetByIdAsync(Guid id) =>
+            await _context.Groups
+                .Include(g => g.Participants)
+                .FirstOrDefaultAsync(g => g.Id == id);
 
-        public async Task<IEnumerable<Group>> GetAllAsync() => await _context.Groups.ToListAsync();
+        public async Task<IEnumerable<Group>> GetAllAsync() =>
+            await _context.Groups
+                .Include(g => g.Participants)
+                .ToListAsync();
 
         public async Task AddAsync(Group group)
         {
