@@ -1,9 +1,12 @@
 using Microsoft.EntityFrameworkCore;
 using Infrastructure.Groups.Persistence;
 using Infrastructure.Groups.Repositories;
+using Infrastructure.Expenses.Persistence;
 using Domain.Groups.Repositories;
 using Microsoft.OpenApi.Models;
 using System;
+using Domain.Expenses.Repositories;
+using Infrastructure.Expenses.Repositories;
 using Microsoft.AspNetCore.SignalR;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -33,6 +36,7 @@ builder.Services.AddDbContext<GroupDbContext>(options =>
 builder.Services.AddScoped<IGroupRepository, GroupRepository>();
 builder.Services.AddScoped<Application.Groups.CommandServices.GroupCommandService>();
 builder.Services.AddScoped<Application.Groups.QueryServices.GroupQueryService>();
+builder.Services.AddScoped<IExpenseRepository, ExpenseRepository>();
 
 
 builder.Services.AddCors(options =>
