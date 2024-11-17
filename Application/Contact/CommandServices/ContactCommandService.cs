@@ -20,9 +20,7 @@ public class ContactCommandService : IContactCommandService
 
     public async Task<int> Handle(CreateContactCommand command)
     {
-        if (command.Name.Length == 0) throw new Exception("Contact name mut be more than 0");
-
-        var contact = new Contacto()
+        var contact = new Contact()
         {
             Name = command.Name,
             Email = command.Email
