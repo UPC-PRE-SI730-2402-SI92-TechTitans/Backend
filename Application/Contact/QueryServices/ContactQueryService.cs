@@ -13,14 +13,13 @@ public class ContactQueryService : IContactQueryService
     {
         _repository = repository;
     }
-
-    //overload
+    
     public async Task<IEnumerable<Contacto>?> Handle(GetAllContactsQuery query)
     {
         return await _repository.ListAsync();
     }
 
-    public async Task<Contacto?> Handle(GetContactByIdQuery query)
+    public async Task<Contact?> Handle(GetContactByIdQuery query)
     {
         return await _repository.FindByIdAsync(query.Id);
     }
