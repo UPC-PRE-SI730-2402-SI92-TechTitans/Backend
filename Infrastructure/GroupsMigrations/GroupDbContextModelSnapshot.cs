@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace Infrastructure.Migrations
+namespace Infrastructure.GroupsMigrations
 {
     [DbContext(typeof(GroupDbContext))]
     partial class GroupDbContextModelSnapshot : ModelSnapshot
@@ -21,11 +21,11 @@ namespace Infrastructure.Migrations
 
             modelBuilder.Entity("Domain.Groups.Model.Entities.Group", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<Guid?>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("char(36)");
 
-                    b.Property<DateTime>("CreationDate")
+                    b.Property<DateTime?>("CreationDate")
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("Description")
@@ -43,24 +43,24 @@ namespace Infrastructure.Migrations
 
             modelBuilder.Entity("Domain.Groups.Model.Entities.Participant", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<Guid?>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("char(36)");
 
-                    b.Property<decimal>("Amount")
+                    b.Property<decimal?>("Amount")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<DateTime>("Date")
+                    b.Property<DateTime?>("Date")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<Guid>("GroupId")
+                    b.Property<Guid?>("GroupId")
                         .HasColumnType("char(36)");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<decimal>("PendingPayment")
+                    b.Property<decimal?>("PendingPayment")
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
@@ -74,9 +74,7 @@ namespace Infrastructure.Migrations
                 {
                     b.HasOne("Domain.Groups.Model.Entities.Group", "Group")
                         .WithMany("Participants")
-                        .HasForeignKey("GroupId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("GroupId");
 
                     b.Navigation("Group");
                 });

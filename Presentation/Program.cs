@@ -4,15 +4,14 @@ using Infrastructure.Groups.Repositories;
 using Domain.Groups.Repositories;
 using Microsoft.OpenApi.Models;
 using System;
-using Microsoft.AspNetCore.SignalR;
-
 var builder = WebApplication.CreateBuilder(args);
 
 var connectionString = builder.Configuration.GetConnectionString("financeGuardConnection");
 
+// Registro de GroupDbContext
 builder.Services.AddDbContext<GroupDbContext>(options =>
 {
-    if (connectionString != null)
+    if (!string.IsNullOrEmpty(connectionString))
     {
         if (builder.Environment.IsDevelopment())
         {
@@ -30,11 +29,12 @@ builder.Services.AddDbContext<GroupDbContext>(options =>
     }
 });
 
+// Registro de repositorios y servicios para Groups
 builder.Services.AddScoped<IGroupRepository, GroupRepository>();
 builder.Services.AddScoped<Application.Groups.CommandServices.GroupCommandService>();
 builder.Services.AddScoped<Application.Groups.QueryServices.GroupQueryService>();
 
-
+// Configuración de CORS
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("CorsPolicy", policy =>
@@ -45,12 +45,15 @@ builder.Services.AddCors(options =>
     });
 });
 
+// Configuración de JSON
 builder.Services.AddControllers().AddJsonOptions(options =>
 {
     options.JsonSerializerOptions.PropertyNamingPolicy = System.Text.Json.JsonNamingPolicy.CamelCase;
     options.JsonSerializerOptions.DefaultIgnoreCondition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull;
+    options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
 });
 
+// Configuración de Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -59,16 +62,19 @@ builder.Services.AddSwaggerGen(c =>
 
 var app = builder.Build();
 
+// Asegurar la creación de la base de datos para ambos contextos
 using (var scope = app.Services.CreateScope())
 {
-    var dbContext = scope.ServiceProvider.GetRequiredService<GroupDbContext>();
-    dbContext.Database.EnsureCreated();
+    var groupDbContext = scope.ServiceProvider.GetRequiredService<GroupDbContext>();
+
+    groupDbContext.Database.EnsureCreated();
 }
 
+// Configuración de Swagger
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Project API v1"));
+    app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Finance Guard API v1"));
 }
 
 app.UseHttpsRedirection();
