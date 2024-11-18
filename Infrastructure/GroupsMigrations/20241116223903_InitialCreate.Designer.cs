@@ -8,9 +8,9 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace Infrastructure.GroupsMigrations
+namespace Infrastructure.Migrations
 {
-    [DbContext(typeof(GroupDbContext))]
+    [DbContext(typeof(AppDbContext))]
     [Migration("20241116223903_InitialCreate")]
     partial class InitialCreate
     {
