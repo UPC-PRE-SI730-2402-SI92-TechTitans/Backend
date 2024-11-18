@@ -19,27 +19,51 @@ namespace Presentation.Groups.Controllers
             _commandService = commandService;
             _queryService = queryService;
         }
+        
+        private Guid GetUserIdFromToken()
+        {
+            // Simulación de decodificación del token JWT.
+            // Aquí puedes implementar la lógica para obtener el `userId` real del token.
+            // Por ahora, retornaremos un valor de prueba.
+            return Guid.Parse("3fa85f64-5717-4562-b3fc-2c963f66afa6");
+        }
 
         [HttpGet]
         public async Task<IActionResult> GetAllGroups()
         {
+            var userId = GetUserIdFromToken();
             var groups = await _queryService.GetAllGroupsAsync();
-            var result = groups.Select(g => g.ToResource()).ToList();
-            return Ok(result);
+
+            // Filtrar los grupos donde el usuario está presente como participante
+            var filteredGroups = groups
+                .Where(g => g.Participants.Any(p => p.Id == userId))
+                .Select(g => g.ToResource())
+                .ToList();
+
+            return Ok(filteredGroups);
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetGroupById(Guid id)
         {
+            var userId = GetUserIdFromToken();
             var group = await _queryService.GetGroupByIdAsync(id);
+
             if (group == null)
             {
                 return NotFound();
             }
 
+            // Verificar si el usuario está presente en el grupo
+            if (!group.Participants.Any(p => p.Id == userId))
+            {
+                return Forbid("El usuario no es miembro del grupo.");
+            }
+
             var result = group.ToResource();
             return Ok(result);
         }
+
 
         [HttpPost]
         public async Task<IActionResult> CreateGroup([FromBody] GroupDto groupDto)
@@ -49,17 +73,29 @@ namespace Presentation.Groups.Controllers
                 return BadRequest(ModelState);
             }
 
+            var userId = GetUserIdFromToken();
             groupDto.Id = null;
-            foreach (var participant in groupDto.Participants ?? new List<ParticipantDto>())
+            groupDto.CreationDate = DateTime.UtcNow;
+
+            // Añadir al usuario autenticado como participante
+            var userParticipant = new ParticipantDto
             {
-                participant.Id = null;
-            }
+                Id = userId,
+                Name = "Usuario Autenticado", // Puedes obtener el nombre real del usuario del token si está disponible
+                Amount = 0,
+                PendingPayment = 0,
+                Date = DateTime.UtcNow
+            };
+
+            groupDto.Participants ??= new List<ParticipantDto>();
+            groupDto.Participants.Add(userParticipant);
 
             var group = groupDto.ToDomainModel();
             await _commandService.CreateGroupAsync(group);
             var result = group.ToResource();
             return CreatedAtAction(nameof(GetGroupById), new { id = result.Id }, result);
         }
+
 
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateGroup(Guid id, [FromBody] GroupDto groupDto)
@@ -71,17 +107,34 @@ namespace Presentation.Groups.Controllers
 
             if (id != groupDto.Id)
             {
-                return BadRequest("The group ID doesn't match.");
+                return BadRequest("El ID del grupo no coincide.");
             }
 
-            var group = groupDto.ToDomainModel();
-            await _commandService.UpdateGroupAsync(group);
+            var userId = GetUserIdFromToken();
+            var group = await _queryService.GetGroupByIdAsync(id);
+
+            if (group == null || !group.Participants.Any(p => p.Id == userId))
+            {
+                return Forbid("El usuario no tiene permisos para modificar este grupo.");
+            }
+
+            var updatedGroup = groupDto.ToDomainModel();
+            await _commandService.UpdateGroupAsync(updatedGroup);
             return NoContent();
         }
+
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteGroup(Guid id)
         {
+            var userId = GetUserIdFromToken();
+            var group = await _queryService.GetGroupByIdAsync(id);
+
+            if (group == null || !group.Participants.Any(p => p.Id == userId))
+            {
+                return Forbid("El usuario no tiene permisos para eliminar este grupo.");
+            }
+
             await _commandService.DeleteGroupAsync(id);
             return NoContent();
         }

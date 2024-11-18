@@ -29,7 +29,6 @@
 
     <ItemGroup>
       <Folder Include="Contact\Controllers\" />
-      <Folder Include="Expenses\Controllers\" />
       <Folder Include="Security\Controllers\" />
     </ItemGroup>
 
