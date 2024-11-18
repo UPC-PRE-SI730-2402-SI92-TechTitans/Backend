@@ -4,6 +4,10 @@ using Infrastructure.Groups.Repositories;
 using Domain.Groups.Repositories;
 using Microsoft.OpenApi.Models;
 using System;
+using Application.Security.CommandServices;
+using Domain.Security.Repositories;
+using Domain.Security.Services;
+using Infrastructure.Security;
 using Microsoft.AspNetCore.SignalR;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -33,7 +37,9 @@ builder.Services.AddDbContext<GroupDbContext>(options =>
 builder.Services.AddScoped<IGroupRepository, GroupRepository>();
 builder.Services.AddScoped<Application.Groups.CommandServices.GroupCommandService>();
 builder.Services.AddScoped<Application.Groups.QueryServices.GroupQueryService>();
-
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IUserCommandService, UserCommandService>();
+builder.Services.AddScoped<IEncryptService, EncryptService>();
 
 builder.Services.AddCors(options =>
 {

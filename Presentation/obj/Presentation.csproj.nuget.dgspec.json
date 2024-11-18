@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Presentation\\Presentation.csproj": {}
+    "D:\\web\\financeguard\\Backend\\Presentation\\Presentation.csproj": {}
   },
   "projects": {
-    "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Application\\Application.csproj": {
+    "D:\\web\\financeguard\\Backend\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Application\\Application.csproj",
+        "projectUniqueName": "D:\\web\\financeguard\\Backend\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Application\\obj\\",
+        "projectPath": "D:\\web\\financeguard\\Backend\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "D:\\web\\financeguard\\Backend\\Application\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -33,11 +29,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Domain\\Domain.csproj"
+              "D:\\web\\financeguard\\Backend\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\web\\financeguard\\Backend\\Domain\\Domain.csproj"
               },
-              "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Infrastructure\\Infrastructure.csproj"
+              "D:\\web\\financeguard\\Backend\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "D:\\web\\financeguard\\Backend\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -57,6 +53,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[9.0.0, )"
@@ -64,6 +64,14 @@
             "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
               "version": "[9.0.0, )"
+            },
+            "Microsoft.IdentityModel.JsonWebTokens": {
+              "target": "Package",
+              "version": "[8.2.1, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.2.1, )"
             }
           },
           "imports": [
@@ -86,21 +94,17 @@
         }
       }
     },
-    "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Domain\\Domain.csproj": {
+    "D:\\web\\financeguard\\Backend\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\web\\financeguard\\Backend\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Domain\\obj\\",
+        "projectPath": "D:\\web\\financeguard\\Backend\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "D:\\web\\financeguard\\Backend\\Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -161,21 +165,17 @@
         }
       }
     },
-    "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Infrastructure\\Infrastructure.csproj": {
+    "D:\\web\\financeguard\\Backend\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "D:\\web\\financeguard\\Backend\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Infrastructure\\obj\\",
+        "projectPath": "D:\\web\\financeguard\\Backend\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "D:\\web\\financeguard\\Backend\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -190,8 +190,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Domain\\Domain.csproj"
+              "D:\\web\\financeguard\\Backend\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\web\\financeguard\\Backend\\Domain\\Domain.csproj"
               }
             }
           }
@@ -268,21 +268,17 @@
         }
       }
     },
-    "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Presentation\\Presentation.csproj": {
+    "D:\\web\\financeguard\\Backend\\Presentation\\Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Presentation\\Presentation.csproj",
+        "projectUniqueName": "D:\\web\\financeguard\\Backend\\Presentation\\Presentation.csproj",
         "projectName": "Presentation",
-        "projectPath": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Presentation\\Presentation.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Presentation\\obj\\",
+        "projectPath": "D:\\web\\financeguard\\Backend\\Presentation\\Presentation.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "D:\\web\\financeguard\\Backend\\Presentation\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -297,8 +293,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Application\\Application.csproj": {
-                "projectPath": "D:\\Universidad\\8vo Ciclo\\Aplicaciones Web\\TF\\Repositorios\\Backend\\Application\\Application.csproj"
+              "D:\\web\\financeguard\\Backend\\Application\\Application.csproj": {
+                "projectPath": "D:\\web\\financeguard\\Backend\\Application\\Application.csproj"
               }
             }
           }
@@ -318,6 +314,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.8, )"
@@ -345,6 +345,10 @@
             "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
               "version": "[9.0.0, )"
+            },
+            "Microsoft.IdentityModel.JsonWebTokens": {
+              "target": "Package",
+              "version": "[8.2.1, )"
             },
             "MySql.EntityFrameworkCore": {
               "target": "Package",

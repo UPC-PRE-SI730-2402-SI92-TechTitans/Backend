@@ -11,3 +11,16 @@ D:\Universidad\8vo Ciclo\Aplicaciones Web\TF\Repositorios\Backend\Domain\obj\Deb
 D:\Universidad\8vo Ciclo\Aplicaciones Web\TF\Repositorios\Backend\Domain\obj\Debug\net8.0\ref\Domain.dll
 D:\Universidad\8vo Ciclo\Aplicaciones Web\TF\Repositorios\Backend\Domain\obj\Debug\net8.0\Domain.sourcelink.json
 D:\Universidad\8vo Ciclo\Aplicaciones Web\TF\Repositorios\Backend\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
+D:\web\financeguard\Backend\Domain\bin\Debug\net8.0\Domain.deps.json
+D:\web\financeguard\Backend\Domain\bin\Debug\net8.0\Domain.dll
+D:\web\financeguard\Backend\Domain\bin\Debug\net8.0\Domain.pdb
+D:\web\financeguard\Backend\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
+D:\web\financeguard\Backend\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\web\financeguard\Backend\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+D:\web\financeguard\Backend\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+D:\web\financeguard\Backend\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+D:\web\financeguard\Backend\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+D:\web\financeguard\Backend\Domain\obj\Debug\net8.0\Domain.dll
+D:\web\financeguard\Backend\Domain\obj\Debug\net8.0\refint\Domain.dll
+D:\web\financeguard\Backend\Domain\obj\Debug\net8.0\Domain.pdb
+D:\web\financeguard\Backend\Domain\obj\Debug\net8.0\ref\Domain.dll

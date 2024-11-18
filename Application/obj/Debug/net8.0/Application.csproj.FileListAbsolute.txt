@@ -16,3 +16,21 @@ D:\Universidad\8vo Ciclo\Aplicaciones Web\TF\Repositorios\Backend\Application\ob
 D:\Universidad\8vo Ciclo\Aplicaciones Web\TF\Repositorios\Backend\Application\obj\Debug\net8.0\Application.pdb
 D:\Universidad\8vo Ciclo\Aplicaciones Web\TF\Repositorios\Backend\Application\obj\Debug\net8.0\ref\Application.dll
 D:\Universidad\8vo Ciclo\Aplicaciones Web\TF\Repositorios\Backend\Application\obj\Debug\net8.0\Application.sourcelink.json
+D:\web\financeguard\Backend\Application\bin\Debug\net8.0\Application.deps.json
+D:\web\financeguard\Backend\Application\bin\Debug\net8.0\Application.dll
+D:\web\financeguard\Backend\Application\bin\Debug\net8.0\Application.pdb
+D:\web\financeguard\Backend\Application\bin\Debug\net8.0\Domain.dll
+D:\web\financeguard\Backend\Application\bin\Debug\net8.0\Infrastructure.dll
+D:\web\financeguard\Backend\Application\bin\Debug\net8.0\Domain.pdb
+D:\web\financeguard\Backend\Application\bin\Debug\net8.0\Infrastructure.pdb
+D:\web\financeguard\Backend\Application\obj\Debug\net8.0\Application.csproj.AssemblyReference.cache
+D:\web\financeguard\Backend\Application\obj\Debug\net8.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\web\financeguard\Backend\Application\obj\Debug\net8.0\Application.AssemblyInfoInputs.cache
+D:\web\financeguard\Backend\Application\obj\Debug\net8.0\Application.AssemblyInfo.cs
+D:\web\financeguard\Backend\Application\obj\Debug\net8.0\Application.csproj.CoreCompileInputs.cache
+D:\web\financeguard\Backend\Application\obj\Debug\net8.0\Application.sourcelink.json
+D:\web\financeguard\Backend\Application\obj\Debug\net8.0\Applicat.44B5EDA2.Up2Date
+D:\web\financeguard\Backend\Application\obj\Debug\net8.0\Application.dll
+D:\web\financeguard\Backend\Application\obj\Debug\net8.0\refint\Application.dll
+D:\web\financeguard\Backend\Application\obj\Debug\net8.0\Application.pdb
+D:\web\financeguard\Backend\Application\obj\Debug\net8.0\ref\Application.dll

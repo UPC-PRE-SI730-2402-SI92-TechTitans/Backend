@@ -9,7 +9,6 @@
     <ItemGroup>
       <Folder Include="Contact\" />
       <Folder Include="Expenses\" />
-      <Folder Include="Security\" />
     </ItemGroup>
 
     <ItemGroup>
