@@ -5,20 +5,9 @@ using Microsoft.Extensions.Configuration;
 
 namespace Infrastructure.Shared.Persistence.EFC.Configuration;
 
-public class AppDbContext : DbContext
+public class AppDbContext(DbContextOptions<AppDbContext> options, IConfiguration configuration)
+    : DbContext(options)
 {
-    private readonly IConfiguration _configuration;
-
-    public AppDbContext(IConfiguration configuration)
-    {
-        _configuration = configuration;
-    }
-
-    public AppDbContext(DbContextOptions<AppDbContext> options, IConfiguration configuration) : base(options)
-    {
-        _configuration = configuration;
-    }
-
     public DbSet<Contact> Contacts { get; set; }
     public DbSet<Group> Groups { get; set; }
     public DbSet<Participant> Participants { get; set; }
@@ -26,7 +15,7 @@ public class AppDbContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         if (!optionsBuilder.IsConfigured)
-            optionsBuilder.UseMySQL(_configuration["ConnectionStrings:financeGuardConnection"]);
+            optionsBuilder.UseMySQL(configuration["ConnectionStrings:financeGuardConnection"]);
     }
 
     protected override void OnModelCreating(ModelBuilder builder)
