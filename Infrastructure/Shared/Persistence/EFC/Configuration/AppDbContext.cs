@@ -1,4 +1,5 @@
 using Domain.FinanceGuard.Model.Entities;
+using Domain.Groups.Model.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
@@ -19,6 +20,8 @@ public class AppDbContext : DbContext
     }
 
     public DbSet<Contact> Contacts { get; set; }
+    public DbSet<Group> Groups { get; set; }
+    public DbSet<Participant> Participants { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -36,5 +39,13 @@ public class AppDbContext : DbContext
 
         builder.Entity<Contact>().ToTable("Contact")
             .Property(c => c.Email).HasMaxLength(35).IsRequired();
+
+            builder.Entity<Group>().HasKey(g => g.Id);
+        builder.Entity<Participant>().HasKey(p => p.Id);
+
+        builder.Entity<Group>()
+            .HasMany(g => g.Participants)
+            .WithOne(p => p.Group)
+            .HasForeignKey(p => p.GroupId);
     }
 }
