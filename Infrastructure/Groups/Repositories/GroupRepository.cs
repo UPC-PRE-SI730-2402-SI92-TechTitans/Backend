@@ -1,18 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Domain.Groups.Model.Entities;
 using Domain.Groups.Repositories;
-using Infrastructure.Groups.Persistence;
+using Infrastructure.Shared.Persistence.EFC.Configuration;
 
 namespace Infrastructure.Groups.Repositories
 {
     public class GroupRepository : IGroupRepository
     {
-        private readonly GroupDbContext _context;
+        private readonly AppDbContext _context;
 
-        public GroupRepository(GroupDbContext context)
+        public GroupRepository(AppDbContext context)
         {
             _context = context;
         }
