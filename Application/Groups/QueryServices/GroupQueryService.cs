@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Project.Domain.Groups.Model.Entities;
-using Project.Domain.Groups.Repositories;
+using Domain.Groups.Model.Entities;
+using Domain.Groups.Repositories;
 
-namespace Project.Application.Groups.QueryServices
+namespace Application.Groups.QueryServices
 {
     public class GroupQueryService
     {
@@ -17,6 +17,14 @@ namespace Project.Application.Groups.QueryServices
 
         public async Task<IEnumerable<Group>> GetAllGroupsAsync() => await _repository.GetAllAsync();
 
-        public async Task<Group> GetGroupByIdAsync(Guid id) => await _repository.GetByIdAsync(id);
+        public async Task<Group> GetGroupByIdAsync(Guid id)
+        {
+            var group = await _repository.GetByIdAsync(id);
+            if (group == null)
+            {
+                throw new KeyNotFoundException($"Group with ID '{id}' was not found.");
+            }
+            return group;
+        }
     }
 }
